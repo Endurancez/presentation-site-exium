@@ -1,0 +1,25 @@
+<?php
+    $lang = array(
+    "1header" => "Romania’s Premier Cryptocurrency Exchange",
+    "1minhead" => "Lansarea oficiala",
+    "zi" => "Zile",
+    "ora" => "Ore",
+    "minut" => "Minute",
+    "secunda" => "Secunde",
+    "butonhead" => "Ramai informat!",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "butonbot" => "Ramai informat!",
+        "lang_en" => "Engleza",
+        "lang_ro" => "Romana"
+    );

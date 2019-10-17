@@ -1,0 +1,1450 @@
+/*
+* #2C5CAD  deschis #2791FF   inchis #1a3767
+*/
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a, a:hover, a:link, a:visited, a:active{
+    text-decoration: none;
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+}
+
+p, li{
+    font-size: 16px;
+}
+
+.intro p{
+    text-align: center;
+}
+
+h1, h2, h3, h4{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+strong{
+    background: linear-gradient(to right, #2791FF, #1a3767);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 1px rgba(10,10,10, 0.2);
+}
+
+/*    Bara de nav   */
+.affix {
+    background-color: #2791FF;
+}
+
+.navbar-custom {
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+    padding: 20px 0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    text-transform: capitalize;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: #2C5CAD;
+    border-radius: 20px;
+}
+
+.navbar-custom .navbar-toggle {
+    background-color: #2C5CAD;
+}
+
+.navbar-custom .navbar-toggle .affix{
+    background-color: purple;
+}
+
+.navbar-custom .icon-bar {
+    background-color: white;
+}
+
+.navbar-custom .navbar-nav li.bordernav a {
+    border: 1px solid white;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
+    height: 110%;
+    width: auto;
+}
+/*    Final navbar    */
+
+
+/*      Count down      */
+
+#del-countdown{
+    width: 70%;
+    margin: 0 auto;
+}
+#clock span{
+    float: left;
+    text-align: center;
+    font-size: 44px;
+    margin: 0 2.5%;
+    color: #fff;
+    width: 20%;
+    /*      padding: 20px;
+          border-radius: 20px;
+          box-sizing: border-box;*/
+}
+/*    #clock span:nth-child(1){
+      background: #fa5559;
+    }
+    #clock span:nth-child(2){
+      background: #26c2b9;
+    }
+    #clock span:nth-child(3){
+      background: #f6bc58;
+    }
+    #clock span:nth-child(4){
+      background: #2dcb74;
+    }*/
+#clock:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#units span{
+    float: left;
+    width: 25%;
+    text-align: center;
+    /*      margin-top: 15px;*/
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+}
+/*      Final countdown         */
+
+.inphead{
+    font-size: 24px;
+    padding: 22px;
+    border-radius: 25px;
+    background: rgba(0,0,0,.5);
+    opacity: 0,8;
+    color: white;
+    margin-right: 10px;
+}
+
+/*      Progress BAR CONTAINER      */
+
+.progress{
+    margin: 0;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.progressbarcont{
+    background-color: black;
+    opacity: 0.6;
+    padding: 80px 50px;
+    margin: 110px auto;
+    border-radius: 25px;
+    box-shadow: 15px 20px;
+}
+
+/*      FINAL Progress BAR CONTAINER*/
+
+
+/*      Buton HEADER        */
+
+.btn-tune{
+    background: transparent;
+    border-radius: 25px;
+    border: 3px solid #2791FF;
+    font-size: 24px;
+    padding: 5px 25px;
+    color: #2C5CAD;
+
+}
+
+.btn-tunetop{
+    color: white !important;
+    font-weight: bold;
+}
+
+.btn-tune:hover{
+    background: #2791FF;
+    color: white;
+}
+
+/*      FINAL Buton HEADER        */
+
+/*      HEADER h1       */
+.headerh1{
+    color: white; 
+    text-shadow: 1px 1px 1px rgba(10,10,10, 0.4);
+    margin-top: 25px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*      SOCIAL BUTTONS      */
+.social ul{
+    padding: 0;
+}
+
+.social li{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.social a{
+    color:white;
+    padding:15px;
+    border:2px solid white;
+    border-radius:100%;
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    margin:0 5px 20px 5px;
+    text-align:center;
+    -webkit-transition:.25s all;
+    transition:.25s all;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    font-size:20px
+}
+
+
+.fab:hover {
+    opacity: 0.7;
+    color: #2791FF;
+    border: 2px solid #2791FF;
+}
+
+/*     FINAL SOCIAL BUTTONS      */
+
+
+
+
+
+
+/*      ROADMAP     */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 65px auto 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #2C5CAD;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.containerr {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.containerr::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #2791FF;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #2791FF;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid black;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #2791FF transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -13px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #2791FF;
+}
+/*      FINAL ROADMAP      */
+
+
+
+/*      TEAM        */
+.team p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.team .fab{
+    font-size: 28px;
+    color: #2C5CAD;
+    text-decoration: none;
+    display: inline;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    border: 5px solid #2C5CAD;
+}
+
+/*      FINAL TEAM      */
+
+
+
+/*    Inceput footer    */
+
+footer {
+    background-color: #f6f6f6;;
+    width: 100%;
+    bottom: 0;
+    padding: 20px 0;
+    color: #555;
+}
+
+footer p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer .inphead{
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 25px;
+    background: linear-gradient(rgba(0,0,0,.5),
+        rgba(0,0,0,.5));
+    opacity: 0,8;
+    color: white;
+    margin-right: 10px;
+
+}
+
+footer .btn-tunetop{
+    background: transparent;
+    border-radius: 25px;
+    border: 2px solid #2791FF;
+    font-size: 18px;
+    padding: 5px 25px;
+    color: #2C5CAD;
+
+}
+
+footer .btn-tunetop{
+    color: #2C5CAD !important;
+    font-weight: bold;
+}
+
+
+
+/*    Final Footer        */
+
+footer .social a{
+    color: #2C5CAD;
+    padding:15px;
+    border:2px solid #2C5CAD;
+    border-radius:100%;
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    margin:0 5px 20px 5px;
+    text-align:center;
+    -webkit-transition:.25s all;
+    transition:.25s all;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    font-size:18px
+}
+
+footer a{
+    text-decoration: none;
+    color: #555;
+}
+
+footer ul {
+    list-style-type: none;
+}
+footer li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .containerr {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .containerr::before {
+        left: 60px;
+        border: medium solid #2C5CAD;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #2C5CAD transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 17px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+    
+}
+@media screen and (max-width: 765px) {
+    .navbar-brand {
+    padding-left: 15px;
+    padding-bottom: 6px;
+}
+}
+
+
+
+section{
+    display: block;
+    width:100%;
+    padding-top: 80px;;
+}
+
+.intro{
+    height: auto;
+}
+
+/*          SECTIUNEA HEADER        */
+.secheader{
+
+    background: 
+        linear-gradient(180deg, rgba(30, 53, 78, 0.69) 1%, rgba(0, 33, 60, 0.61) 80%),
+
+        url("/resource/exium/1.jpg");
+    background-repeat: no-repeat;
+
+    /*    background: -moz-linear-gradient(to left, rgb(1, 82, 73, 0.3) , rgb(87, 188, 144, 0.3)),  url("/resource/exium/4.jpg");  FF3.6+ 
+        background: -webkit-gradient(to left, rgb(1, 82, 73, 0.3) , rgb(87, 188, 144, 0.3)),  url("/resource/exium/4.jpg");  Chrome,Safari4+ 
+        background: -webkit-linear-gradient(to left, rgb(1, 82, 73, 0.3) , rgb(87, 188, 144, 0.3)),  url("/resource/exium/4.jpg");  Chrome10+,Safari5.1+ 
+        background: -o-linear-gradient(to left, rgb(1, 82, 73, 0.3) , rgb(87, 188, 144, 0.3)),  url("/resource/exium/4.jpg");  Opera 11.10+ 
+        background: -ms-linear-gradient(to left, rgb(1, 82, 73, 0.3) , rgb(87, 188, 144, 0.3)),  url("/resource/exium/4.jpg");  IE10+ 
+        background: linear-gradient(to left, rgb(1, 82, 73, 0.3) , rgb(87, 188, 144, 0.3)),  url("/resource/exium/4.jpg");  W3C */
+    background-size: cover;
+}
+
+.secheader img{
+    width: 100%;
+}
+/*          FINAL HEADER        */
+
+
+
+.secfacts{
+    padding: 80px 0 40px 0;
+}
+
+
+.secicons{
+    background:linear-gradient(180deg, rgba(30, 53, 78, 0.09) 1%, rgba(0, 33, 60, 0.81) 80%),
+        url("/resource/exium/thunder.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover; 
+    padding-bottom: 80px;
+    color: white;
+    padding: 80px 0 40px 0;
+}
+
+.secmedia{
+    background:linear-gradient(180deg, rgba(30, 53, 78, 0.09) 1%, rgba(0, 33, 60, 0.81) 80%),
+        /*        linear-gradient(to left, rgb(1, 82, 73, 0.3) , rgb(87, 188, 144, 0.3)),*/
+        url("/resource/exium/thunder.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover; 
+    padding: 80px 0 40px 0;
+    color: white;
+
+}
+
+.secmedia img{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.padding{
+    padding-left: 35px !important;
+}
+
+.margintop{
+    margin-top: 35px;
+}
+
+.marginbot{
+    margin-bottom: 25px;
+}
+
+ul{
+    padding: 0 !important;
+}
+
+.socmedia li{
+    display: inline-block;
+    margin-top: 4%;
+    width: calc(98% / 5 );
+}
+
+.tokensale{
+    height: auto;
+    padding-bottom: 15px;   
+}
+
+.colorwhite{
+    background-color: #f5f5f5;
+    border-radius-left: 25px;
+}
+
+.progress-barr{
+    background-color: #2C5CAD;
+    border-radius: 25px;
+}
+
+
+.panel-group .panel{
+    margin-bottom: 25px;
+}
+
+
+@media screen and (min-device-width : 1280px) and (width : 1366px){
+
+    #clock span{
+        font-size: 32px;
+    }
+
+    .progressbarcont{
+        padding: 80px 50px;
+        margin: 40px auto;
+
+    }
+}
+
+@media screen  and (max-width : 320px){
+    .navbar-collapse.collapse.in {
+        display: block !important;
+        background: #2791FF;
+        text-align: center;
+
+    }
+    .topbot span{
+        text-align: center;
+        margin: 0 9% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+        display: inline;
+    }
+
+    .top span{
+        text-align: center;
+        margin: 0 6% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .bot span{
+        text-align: center;
+        margin: 0 1% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .progressbarcont .top span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .top span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .bot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .bot span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .topbot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .topbot span:last-child{
+        margin-right: 0 !important;
+    }
+    
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    h2{
+        font-size: 24px;
+    }
+    .socmedia li{
+        width: calc(94% / 5);
+    }
+    
+    .headerh1{
+        font-size: 24px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.1);
+    }
+    section{
+        height: auto;
+        padding-bottom: 15px;
+    }
+    /* Styles */
+    /*      NAVBAR      */
+    .navbar-custom {
+        padding: 10px 0;
+    }
+    /*      FINAL NAVBAR        */
+
+    /*      COUNTDOWN   */
+    #del-countdown{
+        width: 100%;
+
+    }
+    #clock span{
+        font-size: 28px;
+
+    }
+    #units span{
+
+        font-size: 10px;
+    }
+    /*     FINAL COUNTDOWN   */
+
+    /*      Progress BAR CONTAINER      */
+    .progressbarcont{
+        background-color: black;
+        opacity: 0.6;
+        padding: 35px 20px;
+        margin: 80px auto;
+
+    }
+    /*      FINAL PROGRESS      */
+
+    /*      STAY TUNNED  input   */
+    .inphead{
+        font-size: 12px;
+        padding: 18px;
+    }
+    /*      FINAL STAY TUNNED       */
+
+
+    /*      Buton HEADER        */
+    .btn-tune{
+        font-size: 18px;
+    }
+
+    /*      FINAL Buton HEADER        */
+    img .grafic{
+        height: 300px;
+        width: 300px;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+        background: #2791FF;
+        text-align: center;
+
+    }
+    .navbar-collapse li{
+        padding: 0 30px;
+    }
+    
+    
+    
+    .topbot span{
+        text-align: center;
+        margin: 0 18% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+        display: inline;
+    }
+
+    .top span{
+        text-align: center;
+        margin: 0 13.6% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .bot span{
+        text-align: center;
+        margin: 0 3.4% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .progressbarcont .top span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .top span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .bot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .bot span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .topbot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .topbot span:last-child{
+        margin-right: 0 !important;
+    }
+    
+    .apare{
+        display: none;
+    }
+    
+    .topbot .apare{
+        display: none;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-device-width: 610px){
+    
+    
+    .topbot span{
+        text-align: center;
+        margin: 0 9.4% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+        display: inline;
+    }
+
+    .top span{
+        text-align: center;
+        margin: 0 6.8% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .bot span{
+        text-align: center;
+        margin: 0 2.2% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .progressbarcont .top span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .top span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .bot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .bot span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .topbot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .topbot span:last-child{
+        margin-right: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 611px) and (max-device-width: 690px){
+    
+    
+    .topbot span{
+        text-align: center;
+        margin: 0 10% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 12px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+        display: inline;
+    }
+
+    .top span{
+        text-align: center;
+        margin: 0 7.6% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 12px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .bot span{
+        text-align: center;
+        margin: 0 4.8% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 10px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .progressbarcont .top span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .top span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .bot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .bot span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .topbot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .topbot span:last-child{
+        margin-right: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 690px) and (max-device-width: 750px){
+    .topbot span{
+        text-align: center;
+        margin: 0 11.0%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 12px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+        display: inline;
+    }
+
+    .top span{
+        text-align: center;
+        margin: 0 8% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 12px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .bot span{
+        text-align: center;
+        margin: 0 5% !important;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 12px !important;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .progressbarcont .top span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .top span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .bot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .bot span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .topbot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .topbot span:last-child{
+        margin-right: 0 !important;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 480px) and (max-device-width: 1223px){
+    /* Styles */
+    section{
+        height: auto;
+        padding-bottom: 15px;
+    }
+    /* Styles */
+    /*      NAVBAR      */
+    .navbar-custom {
+        padding: 10px 0;
+    }
+    /*      FINAL NAVBAR        */
+
+    /*      COUNTDOWN   */
+    #del-countdown{
+        width: 100%;
+
+    }
+    #clock span{
+        font-size: 28px;
+
+    }
+    #units span{
+
+        font-size: 12px;
+    }
+    /*     FINAL COUNTDOWN   */
+
+    /*      Progress BAR CONTAINER      */
+    .progressbarcont{
+        background-color: black;
+        opacity: 0.6;
+        padding: 50px 20px;
+        margin: 80px auto;
+
+    }
+    /*      FINAL PROGRESS      */
+
+
+
+    /*      STAY TUNNED  input   */
+
+    /*      FINAL STAY TUNNED       */
+
+
+    /*      Buton HEADER        */
+    .btn-tune{
+        font-size: 18px;
+    }
+
+    /*      FINAL Buton HEADER        */
+    img .grafic{
+        height: 150px;
+        width: 1500px;
+    }
+
+    .socmedia li{
+        width: calc(95% / 5);
+    }
+
+
+    .topbot span{
+        text-align: center;
+        margin: 0 10.5%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+        display: inline;
+    }
+
+    .top span{
+        text-align: center;
+        margin: 0 8%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .bot span{
+        text-align: center;
+        margin: 0 5%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .progressbarcont .top span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .top span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .bot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .bot span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .topbot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .topbot span:last-child{
+        margin-right: 0 !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+        background: #2791FF;
+        text-align: center !important;
+        margin-bottom: 4px;
+    }
+    .navbar-nav {
+        float: none!important;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-form {
+        padding: 10px 15px;
+        margin-top: 8px;
+        margin-right: -15px;
+        margin-bottom: 8px;
+        margin-left: -15px;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+        width:100%;
+        float:none!important;
+    }
+    .navbar-collapse li{
+        padding: 0 45px;
+    }
+
+}
+
+
+@media only screen and (min-width : 993px){
+    .headerh1{
+        margin-top: 60px ;
+    }
+    .topbot span{
+        text-align: center;
+        margin: 0 11.0%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+        display: inline;
+    }
+
+    .top span{
+        text-align: center;
+        margin: 0 9.0%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .bot span{
+        text-align: center;
+        margin: 0 6.8%;
+        text-transform: uppercase;
+        width: 20%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .progressbarcont .top span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .top span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .bot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .bot span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .topbot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .topbot span:last-child{
+        margin-right: 0 !important;
+    }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) and (max-device-width : 1823px) {
+    /* Styles */
+    /*  Progress BAR CONTAINER      */
+
+    section{
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .topbot span{
+        text-align: center;
+        margin: 0 11.0%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+        display: inline;
+    }
+
+    .top span{
+        text-align: center;
+        margin: 0 9.4%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .bot span{
+        text-align: center;
+        margin: 0 7.6%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .progressbarcont .top span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .top span:last-child{
+        margin-right: 0 !important;
+    }
+
+
+
+    .progressbarcont .bot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .bot span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .topbot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .topbot span:last-child{
+        margin-right: 0 !important;
+    }
+}
+
+
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    /* Styles */
+    .secheader{
+        height: 100%;
+    }
+    .topbot span{
+        text-align: center;
+        margin: 0 11.0%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+        display: inline;
+    }
+
+    .top span{
+        text-align: center;
+        margin: 0 9.4%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .bot span{
+        text-align: center;
+        margin: 0 7.6%;
+        text-transform: uppercase;
+        width: 25%;
+        color: #ddd;
+        font-size: 13px;
+        text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+
+    .progressbarcont .top span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .top span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .bot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .bot span:last-child{
+        margin-right: 0 !important;
+    }
+
+    .progressbarcont .topbot span:first-child{
+        margin-left: 0 !important;
+    }
+
+    .progressbarcont .topbot span:last-child{
+        margin-right: 0 !important;
+    }
+}
+
+
+
+
+
+
+.papers{
+    background-color: #555;
+    margin-top: 80px;
+    weight: 100%;
+}
+
+.documents{
+    height: auto;
+}
+
+
+
+.panel-default a .panel-heading
+{
+    background: linear-gradient(to right, #2791FF, #1a3767);
+
+    color: white;
+}
+
+
+.text {
+    background: linear-gradient(to right, blue, #FFFF50 , red );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.offlaunch{
+    font-weight: bold; 
+    color: #bcbcbc; 
+    text-shadow: 1px 1px 1px rgba(10,10,10, 0.4);
+}
+
+.top7{
+    margin-top: 7%;
+}
+
+.top3{
+    margin-top: 3%;
+}
+
+bot5{
+    margin-bottom: 5%;
+}
+
+.botteam{
+    margin-bottom: 100px;
+}
+
+a {
+    outline : none;
+}
+
+.limbi{
+    list-style: none;
+}
+
+/*    Buton top       */
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #2791FF;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/*    Buton top final     */
